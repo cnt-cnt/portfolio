@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>架空の動物園サイト</title>
+  <meta name="description" content="架空の動物園サイト(池袋動物園)の紹介ページです。制作時間やターゲット、制作にあたり苦労した点や重視した点を記載しています。">
+  <link rel="icon" href="../img/favicon.webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p><a href="../index.html#works" class="back">← 戻る</a></p>
+      <a href="../ikebukurozoo_works/index.html" target="_blank"><img src="../img/ikebukurozoo_mockup.jpg" alt="池袋動物園モックアップ"></a>
+      <p>クリックすると実際のページに移動します。</p>
+    </header>
+
+    <main>
+      <h1><img src="img/icon_pen.webp" alt="ペンのアイコン">架空の動物園サイト</h1>
+
+      <h2>使用した言語</h2>
+      <p>HTML / CSS / jQuery</p>
+
+      <h2>ワークフロー / 制作時間</h2>
+      <p>企画(2時間)→<br>
+      サイトマップ作成(15分)→<br>
+      ワイヤーフレーム作成(1時間)→<br>
+      コーディング(15時間)※レスポンシブ→<br>
+      修正(1時間)</p>
+      <p>合計19時間15分</p>
+
+      <h2>作品について</h2>
+      <p>池袋動物園(架空)の公式サイト制作。トップページのみ制作。<br>
+      企画にあたり、いくつかの実際にある動物園のサイトを参考にした。特に、<a href="https://www5.city.kyoto.jp/zoo/" target="_blank" class="zoo">京都市動物園</a>と<a href="https://piknica.com/" target="_blank" class="zoo">ふれあい動物園 ピクニカ共和国</a>のサイトを参考にしている。<br>
+      動物園の中でも教育系のものなのかデート向けか、都心にあるのか地方にあるのかなど詳細を決めていくのに時間がかかった。</p>
+
+      <h2>池袋動物園について</h2>
+      <p>池袋駅より徒歩10分 / 都心型動物園 / 小学生向け体験型 / 教育系 / 平日は校外学習の生徒がメイン / 週末はファミリー層がメイン</p> 
+
+      <h2>ターゲット</h2>
+      <p>小学校 / 小学生 / ファミリー層</p>
+
+      <h2>デザイン</h2>
+      <p>小学生向けの体験型動物園を表現できるように、親しみやすく明るく楽しい雰囲気になるようイメージした。メインカラーはオレンジ、黄、黄緑の3色を使用している。色彩効果について調べていた際、オレンジは明るさや元気、黄色は愉快や軽快、黄緑は希望、好奇心を連想させるとのことでこの色にした。また、目がチカチカしないように少し色のトーンを落とした。</p>
+
+      <h2>デバイス</h2>
+      <p>レスポンシブ(PC / SP)</p>
+
+      <h2>コンテンツ幅</h2>
+      <p>PC:1024px(PCファーストで作成) / SP:768px</p>
+
+      <h2>サイトマップ</h2>
+      <p>HOME / 池袋動物園とは / イベント / 施設案内 / 団体でのご案内 / 料金 / アクセス</p>
+
+      <h2 id="wireframe">ワイヤーフレーム</h2>
+      <p><a href="img/wireframe.jpg" target="_blank" class="figma">Figmaで作成。</a>(クリックするとワイヤーフレーム全体が表示されます)。文章はChatGPTで作成。</p>
+      <div class="wireframe">
+        <a href="img/wireframe.jpg" target="_blank"><img src="img/wireframe_cut.jpg" alt="ワイヤーフレーム"></a>
+      </div>
+
+      <h2>苦労、重視した点</h2>
+      <p>SPサイトでのハンバーガーメニューとナビゲーションのjQueryの考え方が少し混乱した。<br>
+      コーディングではインデントを意識し、見返しやすいコードになるようにした。またclass名の付け方を重視し、「 _ 」を用いて単語を区切った。class名は親要素を継承し、「親要素名_inner」や「親要素名_子要素名」となるようにした。<br>画像はPNGをWebpに変換し、軽量化を行った。また、定期的にHTMLエラーチェッカーで確認した。</p>
+    </main>
+
+  </div><!-- .container -->
+
+  <footer>
+    <p><small>© portfolio</small></p>
+  </footer>
+</body>
+</html>

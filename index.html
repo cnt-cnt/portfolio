@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+  <meta name="robots" content="noindex">
+  <!-- <meta name="description" content="ポートフォリオです。"> -->
+  <link rel="icon" href="img/favicon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- SPのハンバーガーメニュー -->
+  <div class="burger">
+    <span></span>
+    <span></span>
+  </div>
+
+  <header id="header">
+    <h1><a href="#header">portfolio</a></h1>
+    <nav class="gnav">
+      <ul>
+        <li class="gnav_sp"><a href="#header">TOP</a></li>
+        <li><a href="#works">WORKS</a></li>
+      </ul>
+    </nav><!-- .gnav -->
+  </header>
+
+  <main>
+    <div class="mainvisual">
+      <img src="img/main.jpg" alt="海辺の港の風景">
+    </div>
+
+    <div class="container">
+
+      <div id="works">
+        <h2>WORKS</h2>
+          <ul>
+            <li>
+              <a href="ikebukurozoo/index.html"><img src="img/ikebukurozoo_mockup.jpg" alt="池袋動物園モックアップ"></a>
+              <p><a href="ikebukurozoo/index.html">架空の動物園サイト</a></p>
+            </li>
+            <li>
+              <a href="todolist/index.html"><img src="img/todolist.jpg" alt="ToDoリストモックアップ"></a>
+              <p><a href="todolist/index.html">シンプルなToDoリスト<br>(JavaScript使用)</a></p>
+            </li>
+            <li>
+            </li>
+          </ul>
+      </div><!-- #works -->
+  </main>
+
+  <footer>
+    <p><small>© portfolio</small></p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      //ハンバーガーメニュー
+      $('.burger').on('click', function(){
+        $('.burger').toggleClass('active');
+        $('.gnav').toggleClass('drawer');
+      });
+
+      $('.gnav a').on('click', function(){
+        $('.burger').toggleClass('active');
+        $('.gnav').toggleClass('drawer');
+      });
+    });
+  </script>
+</body>
+</html>
